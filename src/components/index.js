@@ -1,0 +1,10 @@
+export { default as Navbar } from "./Navbar";
+export { default as About } from "./About";
+export { default as Hero } from "./Hero";
+export { default as Footer } from "./Footer";
+export { default as Projects } from "./Projects";
+export { default as Skills } from "./Skills";
+export { default as SocialMedia } from "./SocialMedia";
+export { default as Certifications } from "./Certifications";
+export { default as SectionTitle } from "./SectionTitle";
+export { default as ProfilePicture } from "./ProfilePicture";

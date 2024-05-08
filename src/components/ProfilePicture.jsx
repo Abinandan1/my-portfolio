@@ -1,5 +1,5 @@
 import { Wrapper } from "../styles/ProfilePicture";
-import mypic from "../assets/me.png";
+import mypic from "../assets/mypic.jpeg";
 const ProfilePicture = () => {
   return (
     <Wrapper>

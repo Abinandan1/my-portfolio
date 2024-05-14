@@ -64,10 +64,15 @@ export const Wrapper = styled.footer`
     align-items: center;
     justify-content: center;
     margin: 0;
-    gap: 1rem;
+    gap: 0.5rem;
   }
   .footer-links {
     display: none;
+  }
+  @media screen and (max-width: 500px) {
+    .copyright-info {
+      font-size: 1rem;
+    }
   }
   @media screen and (min-width: 1000px) {
     .footer-info {

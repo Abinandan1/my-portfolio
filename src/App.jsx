@@ -13,7 +13,6 @@ import {
 function App() {
   return (
     <>
-      <ProfilePicture />
       <SocialMedia />
       <Navbar />
       <Hero />

@@ -30,7 +30,14 @@ export const Wrapper = styled.section`
     height: 2rem;
     width: 2rem;
   }
-
+  @media screen and (max-width: 600px) {
+    .education p {
+      font-size: 1rem;
+    }
+    .education {
+      grid-template-columns: 160px auto 1fr;
+    }
+  }
   @media screen and (min-width: 800px) {
     .education-details div {
       font-size: 1.25rem;

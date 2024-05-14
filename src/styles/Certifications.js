@@ -12,7 +12,7 @@ export const Wrapper = styled.section`
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
-    justify-items: left;
+    /* justify-items: left; */
     gap: 1rem;
   }
   .certification a {
@@ -22,6 +22,8 @@ export const Wrapper = styled.section`
   }
   .certification p {
     margin: 0;
+    text-align: left;
+    max-width: 400px;
   }
   @media screen and (max-width: 500px) {
     .certification p {

@@ -23,4 +23,12 @@ export const Wrapper = styled.section`
   .certification p {
     margin: 0;
   }
+  @media screen and (max-width: 500px) {
+    .certification p {
+      font-size: 1rem;
+    }
+    .certification a {
+      font-size: 0.875rem;
+    }
+  }
 `;

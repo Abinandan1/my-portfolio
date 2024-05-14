@@ -32,10 +32,10 @@ export const Wrapper = styled.section`
   }
   @media screen and (max-width: 600px) {
     .education p {
-      font-size: 1rem;
+      font-size: 0.875rem;
     }
     .education {
-      grid-template-columns: 160px auto 1fr;
+      grid-template-columns: 125px auto 1fr;
     }
   }
   @media screen and (min-width: 800px) {

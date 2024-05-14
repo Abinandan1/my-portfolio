@@ -49,6 +49,12 @@ export const Wrapper = styled.section`
     width: 25rem;
     height: 15rem;
   }
+  @media screen and (max-width: 500px) {
+    img {
+      width: auto;
+      height: 10rem;
+    }
+  }
   a {
     display: grid;
     grid-template-columns: 1fr auto;

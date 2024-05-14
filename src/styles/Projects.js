@@ -51,7 +51,7 @@ export const Wrapper = styled.section`
   }
   @media screen and (max-width: 500px) {
     img {
-      width: auto;
+      width: 20rem;
       height: 10rem;
     }
   }

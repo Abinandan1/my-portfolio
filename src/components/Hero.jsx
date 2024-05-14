@@ -8,11 +8,11 @@ const Hero = () => {
         <ProfilePicture />
         <h1>Hey, I'm Abinandan</h1>
         <p>
-          frontend developer. Enjoy working with Frontend technologies and
-          develop attractive, responsive websites.
+          Web developer. Enjoy working with Web technologies and develop
+          attractive, responsive websites.
         </p>
 
-        <button className="btn btn-hipster">download cv</button>
+        <button className="btn btn-hipster">resume</button>
       </div>
     </Wrapper>
   );

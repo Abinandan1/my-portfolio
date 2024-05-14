@@ -37,6 +37,16 @@ const Certifications = () => {
               credential <FaExternalLinkAlt />
             </a>
           </div>
+          <div className="certification">
+            <p>MERN 2024 Edition - MongoDB, Express, React and NodeJS</p>
+            <a
+              href="https://www.udemy.com/certificate/UC-252154ba-71d5-4dfe-9e2c-7a51b624531b/"
+              target="_blank"
+              className="btn"
+            >
+              credential <FaExternalLinkAlt />
+            </a>
+          </div>
         </div>
       </div>
     </Wrapper>

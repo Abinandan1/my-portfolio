@@ -9,9 +9,9 @@ const About = () => {
       <div className="section-center">
         <SectionTitle text="about me" />
         <p>
-          I'm a Frontend Web Developer passionate about building front-end web
-          applications using technologies like HTML, CSS, JavaScript and React.
-          Do check out some of my work in the projects section.
+          I'm a Web Developer passionate about building web applications using
+          technologies like HTML, CSS, JavaScript, React JS and Node JS. Do
+          check out some of my work in the projects section.
         </p>
         <div className="education">
           <img src={education} alt="" />

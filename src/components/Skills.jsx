@@ -4,6 +4,7 @@ import css from "../assets/css.svg";
 import js from "../assets/js.svg";
 import react from "../assets/react.svg";
 import tailwind_css from "../assets/tailwind_css.svg";
+import node from "../assets/nodejs.svg";
 import SectionTitle from "./SectionTitle";
 const Skills = () => {
   return (
@@ -37,10 +38,16 @@ const Skills = () => {
           </div>
           <div className="skill">
             <div className="img-container">
+              <img src={node} alt="" />
+            </div>
+            <p>Node</p>
+          </div>
+          {/* <div className="skill">
+            <div className="img-container">
               <img src={tailwind_css} alt="" />
             </div>
             <p>tailwind css</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </Wrapper>

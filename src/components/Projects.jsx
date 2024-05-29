@@ -3,7 +3,7 @@ import SectionTitle from "./SectionTitle";
 import { IoMdGlobe } from "react-icons/io";
 import { FaGithub } from "react-icons/fa";
 import project1 from "../assets/project-1.png";
-import project2 from "../assets/project-2.png";
+import project2 from "../assets/project-2.PNG";
 const Projects = () => {
   return (
     <Wrapper id="projects">

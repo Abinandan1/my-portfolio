@@ -3,6 +3,7 @@ import SectionTitle from "./SectionTitle";
 import { IoMdGlobe } from "react-icons/io";
 import { FaGithub } from "react-icons/fa";
 import project1 from "../assets/project-1.png";
+import project2 from "../assets/project-2.png";
 const Projects = () => {
   return (
     <Wrapper id="projects">
@@ -22,7 +23,7 @@ const Projects = () => {
                 <IoMdGlobe className="icon" />
               </a>
               <a
-                href="https://github.com/Abinandan1/mern-course-jobify.git"
+                href="https://github.com/Abinandan1/mern-course-jobify"
                 className="btn btn-link"
               >
                 github <FaGithub className="icon" />
@@ -31,13 +32,16 @@ const Projects = () => {
           </div>
           <div className="project">
             <div className="img-container">
-              <img src="" alt="" />
+              <img src={project2} alt="" />
             </div>
             <div className="project-btns">
-              <a href="" className="btn btn-link">
+              <a href="https://notes-v2.onrender.com/" className="btn btn-link">
                 site link <IoMdGlobe className="icon" />
               </a>
-              <a href="" className="btn btn-link">
+              <a
+                href="https://github.com/Abinandan1/notes_v2"
+                className="btn btn-link"
+              >
                 github <FaGithub className="icon" />
               </a>
             </div>

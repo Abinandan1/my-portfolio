@@ -30,7 +30,7 @@ const Certifications = () => {
           <div className="certification">
             <p>React 18 Tutorial and Projects Course</p>
             <a
-              href="https://www.udemy.com/certificate/UC-bfbe6761-f8f2-4f6c-a0c8-7a8b2e5d6aa5/"
+              href="https://www.udemy.com/certificate/UC-bfbe6761-f8f2-4f6c-a0c8-7a8b2e5d6aa5"
               target="_blank"
               className="btn"
             >

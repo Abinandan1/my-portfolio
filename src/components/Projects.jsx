@@ -17,7 +17,7 @@ const Projects = () => {
             </div>
             <div className="project-btns">
               <a
-                href="https://mern-course-jobify-e9pr.onrender.com/"
+                href="https://mern-course-jobify-e9pr.onrender.com"
                 className="btn btn-link"
               >
                 site link

@@ -10,7 +10,7 @@ const Certifications = () => {
           <div className="certification">
             <p>HTML & CSS Tutorial and Projects Course</p>
             <a
-              href="https://www.udemy.com/certificate/UC-1c88ae73-9442-4c8b-a4f6-ad0c4cc42101/"
+              href="https://www.udemy.com/certificate/UC-1c88ae73-9442-4c8b-a4f6-ad0c4cc42101"
               target="_blank"
               className="btn"
             >

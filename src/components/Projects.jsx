@@ -36,7 +36,7 @@ const Projects = () => {
               <img src={project2} alt="" />
             </div>
             <div className="project-btns">
-              <a href="https://notes-v2.onrender.com/" className="btn btn-link">
+              <a href="https://notes-v2.onrender.com" className="btn btn-link">
                 site link <IoMdGlobe className="icon" />
               </a>
               <a

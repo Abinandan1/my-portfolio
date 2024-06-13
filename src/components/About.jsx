@@ -11,7 +11,7 @@ const About = () => {
         <p>
           I'm a Web Developer passionate about building web applications using
           technologies like HTML, CSS, JavaScript, React JS and Node JS. Do
-          check out some of my work in the projects section.
+          check out some of my works in the projects section.
         </p>
         <div className="education">
           <img src={education} alt="" />

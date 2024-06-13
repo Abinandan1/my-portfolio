@@ -15,6 +15,8 @@ export const Wrapper = styled.section`
   .project {
     position: relative;
     cursor: pointer;
+    box-shadow: var(--shadow-3);
+    border-radius: 0.75rem;
   }
   .project:hover .project-btns {
     opacity: 1;
@@ -40,11 +42,14 @@ export const Wrapper = styled.section`
     justify-content: center;
     align-content: center;
     transition: var(--transition);
+    border-radius: 0.75rem;
   }
   .img-container {
     transition: var(--transition);
+    border-radius: 0.75rem;
   }
   img {
+    border-radius: 0.75rem;
     object-fit: cover;
     width: 25rem;
     height: 15rem;

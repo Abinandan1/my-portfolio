@@ -1,6 +1,6 @@
 import { Wrapper } from "../styles/Hero";
 import ProfilePicture from "./ProfilePicture";
-
+import Resume from "../assets/Resume.pdf";
 const Hero = () => {
   return (
     <Wrapper id="hero">
@@ -12,7 +12,9 @@ const Hero = () => {
           attractive, responsive websites.
         </p>
 
-        <button className="btn btn-hipster">resume</button>
+        <a target="_blank" href={Resume} className="btn btn-hipster">
+          resume
+        </a>
       </div>
     </Wrapper>
   );

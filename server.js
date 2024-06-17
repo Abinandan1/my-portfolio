@@ -13,19 +13,12 @@ dotenv.config();
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // MIDDLEWARE
+app.use(express.static(path.resolve(__dirname, "./client/dist")));
 app.use(express.json());
 
 // SEND EMAIL - CONTACT US
 app.post("/api/v1/contact", async (req, res) => {
   const mailOptions = req.body;
-  console.log(mailOptions);
-  const message = {
-    from: "abinandan2018@gmail.com",
-    to: "abinandan2018@gmail.com",
-    subject: "Message title",
-    text: "Plaintext version of the message",
-    html: "<p>HTML version of the message</p>",
-  };
   const transporter = nodemailer.createTransport({
     // If pooling is used then Nodemailer keeps a fixed amount of connections open and sends the next message once a connection becomes available. It is mostly useful when you have a large number of messages that you want to send in batches or your provider allows you to only use a small amount of parallel connections.
     service: "gmail",

@@ -4,11 +4,13 @@ import nodemailer from "nodemailer";
 import "express-async-errors";
 import { errorHandlerMiddleware } from "./middleware/errorHandlerMiddleware.js";
 import dotenv from "dotenv";
-import path from "path";
+import path, { dirname } from "path";
+import { fileURLToPath } from "url";
 
 // SETUP
 const app = express();
 dotenv.config();
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // MIDDLEWARE
 app.use(express.json());

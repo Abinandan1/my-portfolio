@@ -1,0 +1,47 @@
+import express from "express";
+import nodemailer from "nodemailer";
+import "express-async-errors";
+import { errorHandlerMiddleware } from "./middleware/errorHandlerMiddleware.js";
+import dotenv from "dotenv";
+const app = express();
+dotenv.config();
+
+app.use(express.json());
+app.post("/api/v1/contact", async (req, res) => {
+  const mailOptions = req.body;
+  console.log(mailOptions);
+  const message = {
+    from: "abinandan2018@gmail.com",
+    to: "abinandan2018@gmail.com",
+    subject: "Message title",
+    text: "Plaintext version of the message",
+    html: "<p>HTML version of the message</p>",
+  };
+  const transporter = nodemailer.createTransport({
+    // If pooling is used then Nodemailer keeps a fixed amount of connections open and sends the next message once a connection becomes available. It is mostly useful when you have a large number of messages that you want to send in batches or your provider allows you to only use a small amount of parallel connections.
+    service: "gmail",
+    pool: true,
+    host: "smtp.gmail.com",
+    port: 587,
+    secure: false,
+    auth: {
+      user: process.env.OAUTH_EMAIL,
+      pass: process.env.OAUTH_PASSWORD,
+    },
+  });
+  try {
+    const response = await transporter.sendMail(mailOptions);
+    res.status(200).json({ msg: "Your message has been sent" });
+  } catch (error) {
+    console.log(error);
+  }
+});
+
+app.use("*", (req, res) => {
+  res.status(404).send("Not Found");
+});
+
+app.use(errorHandlerMiddleware);
+app.listen(5000, (req, res) => {
+  console.log("server is listening on port 5000");
+});

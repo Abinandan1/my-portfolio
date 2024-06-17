@@ -1,12 +1,19 @@
+// IMPORTS
 import express from "express";
 import nodemailer from "nodemailer";
 import "express-async-errors";
 import { errorHandlerMiddleware } from "./middleware/errorHandlerMiddleware.js";
 import dotenv from "dotenv";
+import path from "path";
+
+// SETUP
 const app = express();
 dotenv.config();
 
+// MIDDLEWARE
 app.use(express.json());
+
+// SEND EMAIL - CONTACT US
 app.post("/api/v1/contact", async (req, res) => {
   const mailOptions = req.body;
   console.log(mailOptions);
@@ -37,11 +44,20 @@ app.post("/api/v1/contact", async (req, res) => {
   }
 });
 
+// FRONTEND
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "./client/dist", "index.html"));
+});
+
+// NOT FOUND MIDDLEWARE
 app.use("*", (req, res) => {
   res.status(404).send("Not Found");
 });
 
+// ERROR HANDLER MIDDLEWARE
 app.use(errorHandlerMiddleware);
+
+// SERVER
 app.listen(5000, (req, res) => {
   console.log("server is listening on port 5000");
 });
